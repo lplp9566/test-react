@@ -7,7 +7,6 @@ interface IPrivateRoute{
 }
 
 const PrivateRoute = ({ component}:IPrivateRoute) => {
-    //FILL HERE 3.6
     const navigate = useNavigate();
     return <></>
 };

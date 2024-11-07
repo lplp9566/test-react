@@ -3,12 +3,12 @@ import { configureStore } from "@reduxjs/toolkit";
 import floorReducer from "./floorreducer"
 import roleReducer from "./rolereducer"
 
-
-export const store = configureStore({
+ const store = configureStore({
     reducer:{
-        floorReducer,
+        floorAccess:floorReducer,
         roleReducer
     }
 })
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
+export default store
