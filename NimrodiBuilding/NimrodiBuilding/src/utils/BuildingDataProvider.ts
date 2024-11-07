@@ -20,7 +20,7 @@ const useBuildingData = () => {
 
   const getFloorByIndex = (floorIndex:number): Floor |undefined =>
   {
- 
+
     return buildingData[floorIndex]
   }
   const getListOfActivities = ():string[]=>{
